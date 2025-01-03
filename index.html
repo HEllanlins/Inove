@@ -38,17 +38,19 @@
         </div>
 
         <nav class="navbar">
-            <a href="" class="active"><strong>Inicio</strong></a>
-            <a href="#sobre" class="active"><strong>Sobre Nós</strong></a>
-            <a href="#service" class="active"><strong>Serviços</strong></a>
-            <a href="#contato" class="active"><strong>Fale Comigo</strong></a>
+            <div class="nav-bar">
+                <a href="" class="active"><strong>Inicio</strong></a>
+                <a href="#sobre" class="active"><strong>Sobre Nós</strong></a>
+                <a href="#service" class="active"><strong>Serviços</strong></a>
+                <a href="#contato" class="active"><strong>Fale Comigo</strong></a>
+            </div>
         </nav>
 
         <!-- Redes -->
         <div class="redes-top">
-            <a href="https://www.facebook.com/inoveproducaoeventos/"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/inoveproducao/"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.youtube.com/channel/UCtyHGwjSbLeyfWdfwM2BURw"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.facebook.com/inoveproducaoeventos/" class="rede"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/inoveproducao/" class="rede"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCtyHGwjSbLeyfWdfwM2BURw" class="rede"><i class="bi bi-youtube"></i></a>
         </div>
     </header>
 
@@ -102,23 +104,25 @@
         <!-- Soliçitação -->
         <div class="Container2">
 
-            <div>
+            <div class="frame">
                 <iframe src="images/f1 ‐ Feito com o Clipchamp.mp4" frameborder="0">Iluminação</iframe>
             </div>
 
 
-            <div>
+            <div class="frame">
                 <iframe src="images/gt40 ‐ Feito com o Clipchamp.mp4" frameborder="0">Efeitos</iframe>
             </div>
 
 
-            <div>
+            <div class="frame">
                 <iframe src="images/lambo ‐ Feito com o Clipchamp.mp4" frameborder="0">Sons e Leds</iframe>
             </div>
         </div>
         <br>
         <div class="quero">
-            <button class="btn-quero"><i class="bi bi-whatsapp"></i><strong> Essa Estrutura Premium
+            <button class="btn-quero"
+                onclick="window.open('https://api.whatsapp.com/send?phone=5561983180405&amp;text=Ol%C3%A1%2C%20tenho%20interesse%20em%20solicitar%20um%20or%C3%A7amento.%20Acabei%20de%20acessar%20seu%20site%20e%20me%20interessei%20no%20seu%20servi%C3%A7o.', '_blank')"><i
+                    class="bi bi-whatsapp"></i><strong> Essa Estrutura Premium
                 </strong></button>
         </div>
     </section>
@@ -513,48 +517,62 @@
     <article id="contato" class="contato">
         <section class="contatoo">
             <div class="contact">
-                <h1><strong>VAMOS CONVERSAR?</strong></h1>
-                <h3>Pode ter certeza que a equipe Inove Produção <br>
+                <h1 class="h1-contact"><strong>VAMOS CONVERSAR?</strong></h1>
+                <h3 class="h3-contact">Pode ter certeza que a equipe Inove Produção <br>
                     fará de tudo para que o seu evento seja perfeito</h3>
                 <br>
-                <button class="Whatsapp">Fale Conosco!</button>
+                <div class="btn-what">
+                    <button class="Whatsapp"
+                        onclick="window.open('https://api.whatsapp.com/send?phone=5561983180405&amp;text=Ol%C3%A1%2C%20tenho%20interesse%20em%20solicitar%20um%20or%C3%A7amento.%20Acabei%20de%20acessar%20seu%20site%20e%20me%20interessei%20no%20seu%20servi%C3%A7o.', '_blank')"><i
+                            class="bi bi-whatsapp"></i> Nos chame no Whatsapp</button>
+                </div>
                 <br>
-                <h2>Ou Preencha o Dormulário</h2>
             </div>
             <br>
+            <h2 class="h2-form"><strong>Ou Preencha o Formulário</strong></h2>
             <!-- Formulário -->
             <div class="form-container">
-                <h2>Formulário de Evento</h2>
-                <form action="#" method="post">
-                    <div class="form-group">
-                        <label for="name">Nome:</label>
-                        <input type="text" id="name" name="name" required>
+                <form action="https://formspree.io/f/xjkkpyzp" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nome <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="Digite seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefone ou WhatsApp<span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" required placeholder="Digite seu telefone">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="phone">Telefone ou WhatsApp:</label>
-                        <input type="tel" id="phone" name="phone" required>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="event-date">Data do Evento</label>
+                            <input type="date" id="event-date" name="event-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="event-location">Local do Evento</label>
+                            <input type="text" id="event-location" name="event-location" required
+                                placeholder="Digite o local do evento">
+                        </div>
+                        <div class="form-group">
+                            <label for="guest-count">Quantidade de Convidados</label>
+                            <input type="number" id="guest-count" name="guest-count" required
+                                placeholder="Digite a quantidade">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" required>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="4" required
+                                placeholder="Digite sua mensagem"></textarea>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="event-date">Data do Evento:</label>
-                        <input type="date" id="event-date" name="event-date" required>
+                    <div class="btn-sub">
+                        <button type="submit"><strong>Enviar</strong></button>
                     </div>
-                    <div class="form-group">
-                        <label for="event-location">Local do Evento:</label>
-                        <input type="text" id="event-location" name="event-location" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="guest-count">Quantidade de Convidados:</label>
-                        <input type="number" id="guest-count" name="guest-count" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Mensagem:</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit">Enviar</button>
                 </form>
             </div>
         </section>
@@ -562,12 +580,18 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p><i class="bi bi-whatsapp"></i> (67) 9 8318-0405</p>
-            <p><i class="bi bi-envelope-open"></i> orcamento@inoveproducao.com.br</p>
-            <p><i class="bi bi-geo-alt"></i> SHVP Rua 12 Ch 309 Lote 28c Loja 02 - Cap: 72007710 - Vicente Pires - DF
-            </p>
-            <p>&copy; Todos os direitos reservados. Hellan Nascimento Lins - 2025</p>
+        <div class="container-footer">
+            <a href="https://api.whatsapp.com/send?phone=5561983180405&amp;text=Ol%C3%A1%2C%20tenho%20interesse%20em%20solicitar%20um%20or%C3%A7amento.%20Acabei%20de%20acessar%20seu%20site%20e%20me%20interessei%20no%20seu%20servi%C3%A7o."
+                target="_blank" class="loc"><i class="bi bi-whatsapp"></i><strong class="ps2"> (67) 9
+                    8318-0405</strong></a>
+            <p class="loc"><i class="bi bi-envelope-open"></i><strong class="ps2">
+                    orcamento@inoveproducao.com.br</strong></p>
+            <p class="loc"><i class="bi bi-geo-alt"></i><strong class="ps2"> SHVP Rua 12 Ch 309 Lote 28c Loja 02 - Cap:
+                    72007710 - Vicente Pires - DF
+                </strong></p>
+        </div>
+        <div class="cont2">
+            <p><strong>&copy; Todos os direitos reservados. Inove Produção - 2025</strong></p>
         </div>
     </footer>
 
