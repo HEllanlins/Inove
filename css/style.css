@@ -1,0 +1,305 @@
+body {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    font-size: 15px;
+    background-color: rgb(0, 0, 0);
+    color: #afafaf;
+    padding-top: 60px;
+}
+
+/******************************************* Inicio */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    transition: .5s;
+    padding: 0.7em;
+}
+
+.navbar {
+    left: 23%;
+}
+
+.active {
+    color: #fff;
+    margin-left: 3em;
+    font-size: 18px;
+}
+
+.active:hover {
+    color: rgb(255, 208, 0);
+    transition: 1.2s;
+    text-decoration: none;
+}
+
+.redes-top {
+    padding-left: 50em;
+}
+
+.bi-facebook,
+.bi-instagram,
+.bi-youtube {
+    color: goldenrod;
+    font-size: 25px;
+    margin-right: 2px;
+}
+
+.bi-facebook:hover {
+    color: #8a8a8a;
+    transition: 1.2s;
+}
+
+.bi-instagram:hover {
+    color: #8a8a8a;
+    transition: 1.2s;
+}
+
+.bi-youtube:hover {
+    color: #8a8a8a;
+    transition: 1.2s;
+}
+
+/******************************************* Fim Inicio */
+
+/******************************************* Inicio inicio*/
+.Inicio {
+    padding: 100px;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 79%;
+    height: 100vh;
+    /* Altura total da tela */
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 46.5%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    /* Coloca o vídeo atrás do conteúdo */
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    /* Faz o vídeo cobrir todo o contêiner */
+    opacity: 50%;
+}
+
+.h1-inicio {
+    position: absolute;
+    /* Muda para absolute para posicionar sobre o vídeo */
+    top: 50%;
+    /* Centraliza verticalmente */
+    left: 50%;
+    /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Ajusta a posição para centralizar */
+    z-index: 1;
+    /* Garante que o conteúdo fique acima do vídeo */
+    color: white;
+    /* Cor do texto */
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+.h1-inicio {
+    font-size: 45px;
+    text-align: center;
+}
+
+.estrutura-premium {
+    font-size: 35px;
+    text-align: center;
+    color: #e4e4e4;
+}
+
+.image-group {
+    display: flex; /* Define o contêiner como flexível */
+    justify-content: space-between; /* Espaça os itens igualmente */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+.elementors {
+    margin: 10px; /* Adiciona um espaço entre os elementos, se necessário */
+    text-align: center; /* Centraliza o texto abaixo das imagens */
+}
+
+.h-elementos {
+    font-size: 15px;
+}
+
+.Container2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-right: 10px;
+    padding-top: 2em;
+}
+
+.quero {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn-quero {
+    color: #000;
+    background-color: goldenrod;
+    border-radius: 3px;
+    border: none;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.btn-quero:hover {
+    background-color: rgb(153, 153, 153);
+    color: #a74300;
+    transition: 1.2s;
+}
+
+/******************************************* Fim inicio*/
+
+/******************************************* Inicio Sobre*/
+.sobre {
+    padding-top: 5em;
+    display: flex; /* Define o contêiner como flexível */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    justify-content: center;
+}
+
+.INOVE {
+    color: goldenrod;
+    font-size: 60px;
+}
+
+.sobre-h1 {
+    margin-right: 20px; /* Adiciona um espaço entre os elementos, se necessário */
+    color: #ececec;
+}
+
+.desc-sobre {
+    font-size: 14px;
+    max-width: 600px; /* Define uma largura máxima para a descrição, se necessário */
+    text-indent: 50px;
+}
+
+.h-tags,
+.h-locação {
+    color: goldenrod;
+}
+
+.containerr {
+    display: flex;
+    padding-top: 1.2em;
+    justify-content: center;
+}
+
+.tag,
+.locação {
+    cursor: pointer;
+    /* Muda o cursor para indicar que é clicável */
+}
+
+.tag{
+    padding-right: 19em;
+}
+
+/******************************************* Fim Sobre*/
+
+/******************************************* Inicio Serviçes*/
+.service{
+    padding-top: 5em;
+}
+
+.servicoss {
+    width: 100%;
+    /* Define a largura da seção como 100% */
+    background-color: goldenrod;
+    /* Define a cor de fundo como amarelo */
+    color: #000;
+    margin: 0;
+    /* Remove margens padrão */
+    box-sizing: border-box;
+    /* Inclui padding e bordas na largura total */
+    padding: 7em;
+}
+
+.h-service{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.h4-service{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.h4-1{
+    cursor: pointer;
+    transition: 1.3s;
+}
+
+.h4-1:hover{
+    color: #ff1100;
+    transition: 1.2s;
+}
+
+.serv1{
+    transition: 0.3s ease; /* Transição suave */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa o limite */
+}
+
+.serv11{
+    background-color: #000;
+    width: 100%;
+    color: goldenrod;
+    padding: 1em;
+    display: flex; /* Define o contêiner como flexível */
+    align-items: flex-start; /* Alinha os itens ao topo */
+}
+
+.text-content {
+    margin-left: 20px; /* Adiciona um espaço entre a imagem e o texto */
+}
+
+.plp3mm{
+    color: #c20051;
+}
+
+.arrow{
+    margin-right: 10px; /* Espaço entre a setinha e o texto */
+    font-size: 16px; /* Tamanho da setinha */
+    transition: 0.2s; /* Transição suave para a setinha */
+}
+
+.divider {
+    border: 0.2px solid rgba(255, 255, 255, 0.425); /* Linha branca fina */
+    margin: 10px 0; /* Espaçamento acima e abaixo da linha */
+}
+
+/******************************************* Fim Serviçes*/
+
+/******************************************* Inicio Contato*/
+
+.contato{
+    padding-top: 5em;
+    background-color: #fff;
+}
+
+.contatoo{
+    background-color: #fff;
+}
+
+/******************************************* Fim Contato*/
