@@ -26,7 +26,7 @@ body {
     display: flex;
     justify-content: space-between; /* Espaça os itens para os lados */
     align-items: center; /* Alinha verticalmente os itens */
-    padding: 30px 20px; /* Adiciona um pouco de espaço interno */
+    padding: 15px 10px; /* Adiciona um pouco de espaço interno */
     z-index: 100;
     transition: .5s;
 }
@@ -43,7 +43,7 @@ body {
     margin: 0 30px; /* Espaçamento entre os links */
     text-decoration: none; /* Remove o sublinhado dos links */
     color: #ffffff; /* Cor do texto */
-    font-size: 30px;
+    font-size: 18px;
 }
 
 .navbar a:hover{
@@ -67,7 +67,7 @@ body {
 .bi-instagram,
 .bi-youtube {
     color: goldenrod;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .bi-facebook:hover {
@@ -155,12 +155,12 @@ video {
 }
 
 .h1-inicio {
-    font-size: 85px;
+    font-size: 45px;
     text-align: center;
 }
 
 .estrutura-premium {
-    font-size: 75px;
+    font-size: 35px;
     text-align: center;
     color: #e4e4e4;
 }
@@ -182,7 +182,7 @@ video {
 }
 
 .h-elementos {
-    font-size: 28px;
+    font-size: 15px;
     padding: 0 50px;
 }
 
@@ -197,7 +197,7 @@ video {
 
 .frame {
     flex: 1 1 auto; /* Permite que os vídeos ocupem espaço proporcional */
-    max-width: 500px; /* Define uma largura máxima para os vídeos */
+    max-width: 460px; /* Define uma largura máxima para os vídeos */
     text-align: center;
 }
 
@@ -221,7 +221,7 @@ video {
     background-color: goldenrod;
     border-radius: 3px;
     border: none;
-    font-size: 35px;
+    font-size: 25px;
     padding: 10px 20px;
 }
 
@@ -235,7 +235,7 @@ video {
 
 /******************************************* Inicio Sobre*/
 .sobre {
-    padding-top: 12em;
+    padding-top: 10em;
     display: flex;
     /* Define o contêiner como flexível */
     align-items: flex-start;
@@ -245,7 +245,7 @@ video {
 
 .INOVE {
     color: goldenrod;
-    font-size: 140px;
+    font-size: 70px;
 }
 
 .sobre-h1 {
@@ -255,12 +255,12 @@ video {
 }
 
 .h1-sobre{
-    font-size: 60px;
+    font-size: 30px;
 }
 
 .desc-sobre {
-    font-size: 30px;
-    max-width: 1200px;
+    font-size: 15px;
+    max-width: 650px;
     /* Define uma largura máxima para a descrição, se necessário */
     text-indent: 50px;
 }
@@ -268,7 +268,7 @@ video {
 .h-tags,
 .h-locação {
     color: goldenrod;
-    font-size: 35px;
+    font-size: 18px;
 }
 
 .containerr {
@@ -285,19 +285,19 @@ video {
 
 .tags,
 .locacoes{
-    font-size: 25px;
+    font-size: 15px;
     padding-left: 1.5em;
 }
 
 .tag {
-    padding-right: 45em;
+    padding-right: 25em;
 }
 
 /******************************************* Fim Sobre*/
 
 /******************************************* Inicio Serviçes*/
 .service {
-    padding-top: 12em;
+    padding-top: 8em;
 }
 
 .servicoss {
@@ -311,25 +311,24 @@ video {
     box-sizing: border-box;
     /* Inclui padding e bordas na largura total */
     padding: 7em;
-    padding-bottom: 20em;
 }
 
 .h-service {
     display: flex;
     justify-content: center;
-    font-size: 70px;
+    font-size: 35px;
 }
 
 .h4-service {
     display: flex;
     justify-content: center;
-    font-size: 36px;
+    font-size: 18px;
 }
 
 .h4-1 {
     cursor: pointer;
     transition: 1.3s;
-    font-size: 30px;
+    font-size: 15px;
 }
 
 .h4-1:hover {
@@ -345,7 +344,7 @@ video {
 }
 
 .ps{
-    font-size: 28px;
+    font-size: 16px;
 }
 
 .serv11 {
@@ -371,7 +370,7 @@ video {
 .arrow {
     margin-right: 10px;
     /* Espaço entre a setinha e o texto */
-    font-size: 45px;
+    font-size: 22px;
     /* Tamanho da setinha */
     transition: 0.2s;
     /* Transição suave para a setinha */
@@ -389,30 +388,28 @@ video {
 /******************************************* Inicio Contato*/
 
 .contato {
-    padding-top: 7em;
     background-color: #fff;
-    padding-bottom: 20em;
+    padding-bottom: 8em;
 }
 
 .contatoo {
     background-color: #fff;
-    padding-top: 10em;
+    padding-top: 14em;
 }
 
 .h1-contact {
     display: flex;
     justify-content: center;
-    font-size: 76px;
+    font-size: 37px;
     color: goldenrod;
-    margin-bottom: 20px;
 }
 
 .h3-contact {
     display: flex;
     justify-content: center;
-    font-size: 40px;
+    font-size: 20px;
     color: #757575;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .btn-what {
@@ -424,8 +421,8 @@ video {
     background-color: rgb(21, 224, 89);
     color: #ffffff;
     border-radius: 4px;
-    font-size: 36px;
-    padding: 8px 210px;
+    font-size: 18px;
+    padding: 8px 110px;
     border: none;
 }
 
@@ -438,9 +435,9 @@ video {
 .h2-form {
     display: flex;
     justify-content: center;
-    font-size: 60px;
+    font-size: 30px;
     color: goldenrod;
-    padding-bottom: 1.2em;
+    padding-bottom: 0.5em;
 }
 
 /******************************************* Fim Contato*/
@@ -448,7 +445,7 @@ video {
 /******************************************* Inicio Formulario*/
 
 .form-container {
-    max-width: 2000px;
+    max-width: 1200px;
     /* Largura máxima do formulário */
     margin: 0 auto;
     /* Centraliza o formulário na página */
@@ -476,7 +473,7 @@ video {
 }
 
 .form-row {
-    font-size: 28px;
+    font-size: 14px;
     display: flex;
     /* Usar flexbox para alinhar os elementos */
     justify-content: space-between;
@@ -524,9 +521,9 @@ textarea::placeholder {
 }
 
 button {
-    padding: 18px 935px;
+    padding: 18px 556px;
     /* Espaçamento interno do botão */
-    font-size: 36px;
+    font-size: 20px;
     background-color: goldenrod;
     /* Cor de fundo do botão */
     color: rgb(0, 0, 0);
@@ -562,7 +559,7 @@ button:hover {
 
 .ps2 {
     color: #535353;
-    font-size: 26px;
+    font-size: 15px;
 }
 
 .cont2 {
@@ -571,7 +568,7 @@ button:hover {
     color: goldenrod;
     padding-top: 1.2em;
     padding-bottom: 0.6em;
-    font-size: 26px;
+    font-size: 15px;
 }
 
 .loc {
@@ -581,7 +578,7 @@ button:hover {
 .bi-whatsapp,
 .bi-envelope-open,
 .bi-geo-alt{
-    font-size: 26px;
+    font-size: 20px;
 }
 
 /******************************************* Fim Footer*/
