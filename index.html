@@ -7,26 +7,14 @@
     <title>Inove Produção de Eventos</title>
 
     <!-- Links -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- Logo da guia -->
     <link rel="icon" href="https://inoveproducao.com.br/wp-content/uploads/2020/04/icon.png" type="image/png">
 
-    <!-- Styles -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-
-        html {
-            font-family: "Roboto Condensed", serif;
-            font-optical-sizing: auto;
-            font-weight: weight;
-            font-style: normal;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -34,10 +22,18 @@
     <!-- Cabeçalho -->
     <header class="header">
         <div class="logo">
-            <a href=""><img src="images/logoInoveBranca2Ativo-png" alt="Inove" width="150px"></a>
+            <a href=""><img src="images/logoInoveBranca2Ativo-png" alt="Inove" class="lg"></a>
         </div>
 
-        <div class="nav-bar">
+        <!-- Botão do Menu Hambúrguer -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- NavBar -->
+        <div class="nav-bar" id="nav-bar">
             <nav class="navbar">
                 <a href="" class="active"><strong>Inicio</strong></a>
                 <a href="#sobre" class="active"><strong>Sobre Nós</strong></a>
@@ -50,7 +46,8 @@
         <div class="redes-top">
             <a href="https://www.facebook.com/inoveproducaoeventos/" class="rede"><i class="bi bi-facebook"></i></a>
             <a href="https://www.instagram.com/inoveproducao/" class="rede"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.youtube.com/channel/UCtyHGwjSbLeyfWdfwM2BURw" class="rede"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.youtube.com/channel/UCtyHGwjSbLeyfWdfwM2BURw" class="rede"><i
+                    class="bi bi-youtube"></i></a>
         </div>
     </header>
 
@@ -73,28 +70,28 @@
             <!-- Luz -->
             <div class="image-group">
                 <div class="elementors">
-                    <img src="images/luz.png" alt="LUZ" width="120px">
+                    <img src="images/luz.png" alt="LUZ" class="LUZ">
                     <h4 class="h-elementos">Os melhores equipamentos de iluminação do mercado a disposição para o seu
                         evento.</h4>
                 </div>
 
                 <!-- Som -->
                 <div class="elementors">
-                    <img src="images/som.png" alt="SOM" width="100px">
+                    <img src="images/som.png" alt="SOM" class="SOM">
                     <h4 class="h-elementos">Som para eventos grandes e pequenos, com técnico a disposição durante todo
                         tempo.</h4>
                 </div>
 
                 <!-- Led -->
                 <div class="elementors">
-                    <img src="images/LED.png" alt="LED" width="100px">
+                    <img src="images/LED.png" alt="LED" class="LED">
                     <h4 class="h-elementos">Temos Painel de Led P3mm e P5mm de alta definição para todo tipo de evento.
                     </h4>
                 </div>
 
                 <!-- Efeitos -->
                 <div class="elementors">
-                    <img src="images/efeitos.png" alt="EFEITOS" width="65px">
+                    <img src="images/efeitos.png" alt="EFEITOS" class="EFEITOS">
                     <h4 class="h-elementos">Efeitos mais que especiais, que dão todo toque de requinte ao seu evento com
                         Co2 ou Fogo.</h4>
                 </div>
@@ -184,8 +181,8 @@
     </section>
 
     <!-- Serviços -->
-    <article id="service" class="service">
-        <section class="servicoss">
+    <section id="service" class="serviço">
+        <div class="servicoss">
             <div class="servicos">
                 <h2 class="h-service"><strong> O QUE OFERECEMOS?</strong></h2>
                 <h4 class="h4-service">Oferecemos locação de material e prestação de serviços para eventos de todos os
@@ -202,7 +199,7 @@
                         Painel de Led P3mm ou P5mm</h4>
                     <div class="serv1" style="display: none;">
                         <div class="serv11">
-                            <img src="images/h4-1.png" alt="telas-led" width="250px">
+                            <img src="images/h4-1.png" alt="telas-led" class="images-h4">
                             <div class="text-content">
                                 <p class="ps">Trabalhar com material de qualidade é muito importante quando se trata de
                                     <strong>projeção de imagem</strong>.
@@ -228,7 +225,7 @@
                         e Luz</h4>
                     <div class="serv2" style="display: none;">
                         <div class="serv11">
-                            <img src="images/h4-2.png" alt="telas-led" width="250px">
+                            <img src="images/h4-2.png" alt="telas-led" class="images-h4">
                             <div class="text-content">
                                 <p class="ps"><strong><span class="plp3mm">Sonorização:</span></strong> Sistema de som
                                     (QSC, JBL PRX, LS AUDIO), mesa de som digital
@@ -251,14 +248,15 @@
                         Efeitos Especiais (Pirotécnicos)</h4>
                     <div class="serv3" style="display: none;">
                         <div class="serv11">
-                            <img src="images/h4-3.png" alt="telas-led" width="250px">
+                            <img src="images/h4-3.png" alt="telas-led" class="images-h4">
                             <div class="text-content">
                                 <p class="ps">Está procurando aquele glamour no seu evento com impacto?</p>
                                 <p class="ps">Oferecemos efeitos especiais com: <strong>Bazzuca Co2, Bicos de Co2,
                                         Máquina de
                                         Fogo (Fire Machine), Shot Stadium com serpentina a 20 metros de altura.</strong>
                                 </p>
-                                <p class="ps">Todos os nossos equipamentos são controlados via acionador DMX com total segurança.
+                                <p class="ps">Todos os nossos equipamentos são controlados via acionador DMX com total
+                                    segurança.
                                 </p>
                             </div>
                         </div>
@@ -273,7 +271,7 @@
                         Projetores e Tvs</h4>
                     <div class="serv4" style="display: none;">
                         <div class="serv11">
-                            <img src="images/h4-4.png" alt="telas-led" width="250px">
+                            <img src="images/h4-4.png" alt="telas-led" class="images-h4">
                             <div class="text-content">
                                 <p class="ps">Para <span class="plp3mm">projeção de imagem</span>, oferecemos
                                     <strong>projetores de
@@ -300,7 +298,7 @@
                         Praticável e Palco</h4>
                     <div class="serv5" style="display: none;">
                         <div class="serv11">
-                            <img src="images/h4-5.png" alt="telas-led" width="250px">
+                            <img src="images/h4-5.png" alt="telas-led" class="images-h4">
                             <div class="text-content">
                                 <p class="ps">Temos tudo que o você precisa para a infra-estrutura do seu evento: <span
                                         class="plp3mm">box
@@ -313,7 +311,8 @@
                                     forração carpete e/ou tecido garantindo a sofisticação e qualidade na exposição da
                                     sua banda ou palestrante.
                                 </p>
-                                <p class="ps">Para esse tipo de material é necessário trabalhar com quem tem experiência e com todo
+                                <p class="ps">Para esse tipo de material é necessário trabalhar com quem tem experiência
+                                    e com todo
                                     cuidado com a segurança.
                                 </p>
                             </div>
@@ -330,7 +329,7 @@
                         Dourado)</h4>
                     <div class="serv6" style="display: none;">
                         <div class="serv11">
-                            <img src="images/h4-6.png" alt="telas-led" width="250px">
+                            <img src="images/h4-6.png" alt="telas-led" class="images-h4">
                             <div class="text-content">
                                 <p class="ps">Buscamos sempre inovar e oferecer aos nossos clientes um produto de
                                     qualidade e diferencial. O nosso <strong>piso de led colorido</strong> é o único em
@@ -356,7 +355,7 @@
                         180kva</h4>
                     <div class="serv7" style="display: none;">
                         <div class="serv11">
-                            <img src="images/h4-7.png" alt="telas-led" width="250px">
+                            <img src="images/h4-7.png" alt="telas-led" class="images-h4">
                             <div class="text-content">
                                 <p class="ps"><span class="plp3mm">Grupo Gerador</span> não é Luxo, é necessidade.
                                 </p>
@@ -377,7 +376,7 @@
                         Profissional</h4>
                     <div class="serv8" style="display: none;">
                         <div class="serv11">
-                            <img src="images/h4-8.png" alt="telas-led" width="250px">
+                            <img src="images/h4-8.png" alt="telas-led" class="images-h4">
                             <div class="text-content">
                                 <p class="ps">É muito importante ter um profissional qualificado para o seu evento,
                                     afinal de contas é o <span class="plp3mm">DJ ou VJ</span> que garante o sucesso da
@@ -404,7 +403,7 @@
                     </h4>
                     <div class="serv9" style="display: none;">
                         <div class="serv11">
-                            <img src="images/h4-9.png" alt="telas-led" width="250px">
+                            <img src="images/h4-9.png" alt="telas-led" class="images-h4">
                             <div class="text-content">
                                 <p class="ps">Escolher a <strong>melhor banda</strong> para tocar no seu evento é algo
                                     muito delicado.
@@ -509,13 +508,12 @@
             </div>
 
             <hr class="divider">
-
-        </section>
-    </article>
+        </div>
+    </section>
 
     <!-- Contato -->
-    <article id="contato" class="contato">
-        <section class="contatoo">
+    <section id="contato" class="contato">
+        <div class="contatoo">
             <div class="contact">
                 <h1 class="h1-contact"><strong>VAMOS CONVERSAR?</strong></h1>
                 <h3 class="h3-contact">Pode ter certeza que a equipe Inove Produção<br>
@@ -571,18 +569,18 @@
                         </div>
                     </div>
                     <div class="btn-sub">
-                        <button type="submit"><strong>Enviar</strong></button>
+                        <button type="submit" class="env"><strong>Enviar</strong></button>
                     </div>
                 </form>
             </div>
-        </section>
-    </article>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container-footer">
             <a href="https://api.whatsapp.com/send?phone=5561983180405&amp;text=Ol%C3%A1%2C%20tenho%20interesse%20em%20solicitar%20um%20or%C3%A7amento.%20Acabei%20de%20acessar%20seu%20site%20e%20me%20interessei%20no%20seu%20servi%C3%A7o."
-                target="_blank" class="loc"><i class="bi bi-whatsapp""></i><strong class="ps2"> (67) 9
+                target="_blank" class="loc"><i class="bi bi-whatsapp"></i><strong class="ps2"> (67) 9
                     8318-0405</strong></a>
             <p class="loc"><i class="bi bi-envelope-open"></i><strong class="ps2">
                     orcamento@inoveproducao.com.br</strong></p>
@@ -594,11 +592,6 @@
             <p><strong>&copy; Todos os direitos reservados. Inove Produção - 2025</strong></p>
         </div>
     </footer>
-
-    <!-- Bootstrap JS (opcional) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script src="js/Script.js"></script>
 

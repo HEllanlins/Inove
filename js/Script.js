@@ -37,3 +37,15 @@ function toggleContent(serv, header) {
 }
 
 //Fim dos serviços*********************************/
+
+// Menu Hamburguer*********************************/
+
+const hamburger = document.getElementById('hamburger');
+const navBar = document.getElementById('nav-bar');
+
+hamburger.addEventListener('click', () => {
+    navBar.classList.toggle('open');
+    hamburger.classList.toggle('active');
+});
+
+// Fim Menu Hamburguer*********************************/

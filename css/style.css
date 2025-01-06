@@ -4,19 +4,31 @@
     padding: 0;
 }
 
+/******************************************* HTML*/
+
+html {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    /* Normal */
+}
+
+/******************************************* Fim HTML*/
+
 body {
-    width: 100%; /* Largura total */
-    height: 100%; /* Altura total */
+    width: 100%;
+    /* Largura total */
+    height: 100%;
+    /* Altura total */
     margin: 0;
     padding: 0;
-    display: block; 
+    display: block;
     background-color: rgb(0, 0, 0);
     color: #afafaf;
     padding-top: 60px;
     overflow-x: hidden;
 }
 
-/******************************************* Inicio */
+/******************************************* cabeçalho */
 .header {
     position: fixed;
     top: 0;
@@ -24,42 +36,59 @@ body {
     width: 100%;
     background: #000;
     display: flex;
-    justify-content: space-between; /* Espaça os itens para os lados */
-    align-items: center; /* Alinha verticalmente os itens */
-    padding: 15px 10px; /* Adiciona um pouco de espaço interno */
+    justify-content: space-between;
+    /* Espaça os itens para os lados */
+    align-items: center;
+    /* Alinha verticalmente os itens */
+    padding: 15px 10px;
+    /* Adiciona um pouco de espaço interno */
     z-index: 100;
     transition: .5s;
 }
 
 .logo {
-    flex: 1; /* Permite que a logo ocupe o espaço necessário */
+    flex: 1;
+    /* Permite que a logo ocupe o espaço necessário */
+}
+
+.lg {
+    width: 150px;
 }
 
 .nav-bar {
-    text-align: center; /* Centraliza os links de navegação */
+    text-align: center;
+    /* Centraliza os links de navegação */
 }
 
-.navbar a {
-    margin: 0 30px; /* Espaçamento entre os links */
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: #ffffff; /* Cor do texto */
+.navbar .active {
+    margin: 0 30px;
+    /* Espaçamento entre os links */
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    color: #ffffff;
+    /* Cor do texto */
     font-size: 18px;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     color: goldenrod;
     transition: 1.2s;
 }
 
 .redes-top {
-    flex: 1; /* Permite que as redes sociais ocupem o espaço necessário */
-    text-align: right; /* Alinha os ícones à direita */
+    flex: 1;
+    /* Permite que as redes sociais ocupem o espaço necessário */
+    text-align: right;
+    /* Alinha os ícones à direita */
 }
 
 .rede {
-    margin-left: 10px; /* Espaçamento entre os ícones das redes sociais */
-    color: #000; /* Cor dos ícones */
-    text-decoration: none; /* Remove o sublinhado dos links */
+    margin-left: 10px;
+    /* Espaçamento entre os ícones das redes sociais */
+    color: #000;
+    /* Cor dos ícones */
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
 }
 
 
@@ -85,7 +114,7 @@ body {
     transition: 1.2s;
 }
 
-/******************************************* Fim Inicio */
+/******************************************* Fim cabeçalho */
 
 /******************************************* Inicio inicio*/
 
@@ -95,7 +124,8 @@ body {
     align-items: center;
     justify-content: center;
     max-width: 100%;
-    aspect-ratio: 16 / 9; /* Mantém proporção do vídeo */
+    aspect-ratio: 16 / 9;
+    /* Mantém proporção do vídeo */
     margin: 0 auto;
     overflow: hidden;
 }
@@ -103,7 +133,8 @@ body {
 .video-wrapper video {
     width: 100%;
     height: auto;
-    object-fit: cover; /* Ajusta o vídeo sem distorção */
+    object-fit: cover;
+    /* Ajusta o vídeo sem distorção */
 }
 
 .video-info {
@@ -116,7 +147,8 @@ body {
 }
 
 .video-info div {
-    flex: 1 1 30%; /* Distribui proporcionalmente os elementos */
+    flex: 1 1 30%;
+    /* Distribui proporcionalmente os elementos */
     max-width: 300px;
     margin: 0 auto;
 }
@@ -174,6 +206,22 @@ video {
     /* Alinha os itens verticalmente ao centro */
 }
 
+.LUZ {
+    width: 120px;
+}
+
+.SOM {
+    width: 100px;
+}
+
+.LED {
+    width: 100px;
+}
+
+.EFEITOS {
+    width: 65px;
+}
+
 .elementors {
     margin: 10px;
     /* Adiciona um espaço entre os elementos, se necessário */
@@ -190,24 +238,32 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px; /* Define o espaçamento fixo entre os vídeos */
-    flex-wrap: wrap; /* Garante que os vídeos se ajustem em telas menores */
+    gap: 10px;
+    /* Define o espaçamento fixo entre os vídeos */
+    flex-wrap: wrap;
+    /* Garante que os vídeos se ajustem em telas menores */
     padding: 50px 20px;
 }
 
 .frame {
-    flex: 1 1 auto; /* Permite que os vídeos ocupem espaço proporcional */
-    max-width: 460px; /* Define uma largura máxima para os vídeos */
+    flex: 1 1 auto;
+    /* Permite que os vídeos ocupem espaço proporcional */
+    max-width: 460px;
+    /* Define uma largura máxima para os vídeos */
     text-align: center;
 }
 
 /* Estilização dos iframes */
 .frame iframe {
-    width: 100%; /* Ocupa toda a largura disponível do contêiner pai */
-    aspect-ratio: 16 / 9; /* Garante proporção de vídeo padrão */
+    width: 100%;
+    /* Ocupa toda a largura disponível do contêiner pai */
+    aspect-ratio: 16 / 9;
+    /* Garante proporção de vídeo padrão */
     border: none;
-    border-radius: 8px; /* Adiciona bordas arredondadas (opcional) */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra leve */
+    border-radius: 8px;
+    /* Adiciona bordas arredondadas (opcional) */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    /* Adiciona uma sombra leve */
 }
 
 .quero {
@@ -254,7 +310,7 @@ video {
     color: #ececec;
 }
 
-.h1-sobre{
+.h1-sobre {
     font-size: 30px;
 }
 
@@ -284,7 +340,7 @@ video {
 }
 
 .tags,
-.locacoes{
+.locacoes {
     font-size: 15px;
     padding-left: 1.5em;
 }
@@ -296,11 +352,12 @@ video {
 /******************************************* Fim Sobre*/
 
 /******************************************* Inicio Serviçes*/
-.service {
+.serviço {
     padding-top: 8em;
 }
 
 .servicoss {
+    padding-top: 8em;
     width: 100%;
     /* Define a largura da seção como 100% */
     background-color: goldenrod;
@@ -343,7 +400,11 @@ video {
     /* Esconde o conteúdo que ultrapassa o limite */
 }
 
-.ps{
+.images-h4 {
+    width: 250px;
+}
+
+.ps {
     font-size: 16px;
 }
 
@@ -422,7 +483,7 @@ video {
     color: #ffffff;
     border-radius: 4px;
     font-size: 18px;
-    padding: 8px 110px;
+    padding: 8px 70px;
     border: none;
 }
 
@@ -520,8 +581,8 @@ textarea::placeholder {
     justify-content: center;
 }
 
-button {
-    padding: 18px 556px;
+.env {
+    padding: 18px 550px;
     /* Espaçamento interno do botão */
     font-size: 20px;
     background-color: goldenrod;
@@ -536,7 +597,7 @@ button {
     /* Muda o cursor ao passar sobre o botão */
 }
 
-button:hover {
+.env:hover {
     background-color: #b35700;
     /* Cor do botão ao passar o mouse */
     color: #fff;
@@ -554,7 +615,7 @@ button:hover {
     font-weight: bold;
     /* Deixa o texto em negrito */
     padding-top: 1.4em;
-    padding-bottom: 0.6em;
+    padding-bottom: 1.5em;
 }
 
 .ps2 {
@@ -573,59 +634,332 @@ button:hover {
 
 .loc {
     margin-right: 15px;
+    text-decoration: none;
 }
 
 .bi-whatsapp,
 .bi-envelope-open,
-.bi-geo-alt{
+.bi-geo-alt {
     font-size: 20px;
+}
+
+.ps2:hover {
+    color: #006eff;
+    transition: 1.2s;
 }
 
 /******************************************* Fim Footer*/
 
 
 /******************************************* Inicio da responsividade*/
-@media (max-width: 1200px) {
-    .image-group, .video-wrapper, .text-content {
-        flex-wrap: wrap; /* Alinha elementos verticalmente em telas pequenas */
-        width: 100%; /* Garante que não ultrapassem a largura da tela */
-    }
-    .video-wrapper video {
-        width: 100%;
-        height: auto;
-    }
-    .video-wrapper {
-        aspect-ratio: 4 / 3; /* Ajusta para proporção mais comum em telas pequenas */
-    }
-
-    .video-info {
-        flex-direction: column; /* Alinha os elementos verticalmente */
-        gap: 15px;
+/* Media Queries para Responsividade */
+@media (max-width: 1300px) {
+    .lg {
+        width: 120px;
+        /* Ajuste no tamanho da logo */
     }
 
     .video-info div {
-        width: 90%; /* Ocupa quase toda a largura */
+        flex: 1 1 45%;
+        /* Ajusta a largura dos elementos */
+        max-width: 200px;
+        /* Limita o tamanho */
+    }
+
+    .h1-inicio {
+        font-size: 38px;
+        /* Reduz o tamanho do texto */
+    }
+
+    .estrutura-premium {
+        padding-top: 1em;
+        font-size: 30px;
+        /* Ajusta o tamanho da fonte */
+    }
+
+    .tag {
+        padding-right: 29em;
+    }
+
+    .Whatsapp {
+        font-size: 18px;
+        padding: 8px 70px;
+    }
+
+    button {
+        padding: 18px 550px;
     }
 }
 
 @media (max-width: 768px) {
-    .nav-bar, .navbar a {
-        font-size: 14px; /* Reduz o tamanho da fonte */
-    }
-    .h1-inicio, .estrutura-premium {
-        font-size: 20px; /* Ajuste proporcional para cabeçalhos */
+
+    .header {
+        flex-direction: column;
+        /* Alinha a logo e navbar em coluna */
+        text-align: center;
+        /* Centraliza os itens */
     }
 
-    .video-wrapper {
-        aspect-ratio: 4 / 3; /* Ajusta para proporção mais comum em telas pequenas */
+    .lg {
+        width: 100px;
+        /* Reduz o tamanho da logo */
     }
 
-    .video-info {
-        flex-direction: column; /* Alinha os elementos verticalmente */
-        gap: 15px;
+    .bi-facebook,
+    .bi-instagram,
+    .bi-youtube {
+        font-size: 20px;
     }
 
-    .video-info div {
-        width: 90%; /* Ocupa quase toda a largura */
+    .redes-top {
+        padding-top: 1.5em;
+    }
+
+    .navbar .active {
+        font-size: 16px;
+        /* Ajusta o tamanho dos links */
+        margin: 0 10px;
+        /* Reduz o espaçamento */
+    }
+
+    video {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 40%;
+        width: 0;
+        height: 0;
+        z-index: -1;
+        /* Coloca o vídeo atrás do conteúdo */
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        /* Faz o vídeo cobrir todo o contêiner */
+        opacity: 50%;
+    }
+
+    .Inicio {
+        padding-bottom: 13em;
+    }
+
+    .h1-inicio {
+        top: 35%;
+        font-size: 28px;
+        /* Reduz o tamanho do texto */
+    }
+
+    .container {
+        padding-top: 20em;
+    }
+
+    .estrutura-premium {
+        padding-top: 2.5em;
+        font-size: 25px;
+        /* Ajusta o tamanho da fonte */
+    }
+
+    .image-group {
+        flex-direction: column;
+        /* Alinha os itens em coluna */
+        gap: 20px;
+        /* Adiciona espaçamento entre os itens */
+    }
+
+    .frame {
+        max-width: 100%;
+        /* Ajusta largura para o tamanho da tela */
+    }
+
+    .btn-quero {
+        font-size: 20px;
+        /* Reduz o tamanho do botão */
+    }
+
+    .h1-contact {
+        font-size: 30px;
+        /* Ajusta o tamanho do texto */
+    }
+
+    .h3-contact{
+        font-size: 19px;
+        text-indent: 1%;
+    }
+
+    .btn-what {
+        flex-direction: column;
+        /* Botão WhatsApp centralizado */
+    }
+
+    .INOVE {
+        color: goldenrod;
+        font-size: 60px;
+    }
+
+    .sobre-h1 {
+        margin-right: 10px;
+    }
+
+    .h1-sobre {
+        font-size: 20px;
+    }
+
+    .desc-sobre {
+        font-size: 12px;
+        max-width: 250px;
+        /* Define uma largura máxima para a descrição, se necessário */
+        text-indent: 50px;
+    }
+
+    .tags,
+    .locacoes {
+        font-size: 15px;
+        padding-left: 1.5em;
+    }
+
+    .tag {
+        padding-right: 1em;
+        padding-left: 2em;
+    }
+
+    .servicoss {
+        padding: 7em 2em;
+    }
+
+    .h4-service {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .images-h4 {
+        width: 90px;
+    }
+
+    .Whatsapp {
+        padding: 8px 10px;
+    }
+
+    .btn-what{
+        padding: 8px 10px;
+    }
+
+    .env{
+        padding: 10px 155px;
+    }
+    
+    .ps2 {
+        color: #535353;
+        font-size: 12px;
+    }
+
+    .cont2 {
+        display: flex;
+        justify-content: center;
+        color: goldenrod;
+        padding-top: 1.2em;
+        padding-bottom: 0.6em;
+        font-size: 12px;
+    }
+
+    .loc {
+        margin-right: 12px;
+        text-decoration: none;
+    }
+
+    .bi-whatsapp,
+    .bi-envelope-open,
+    .bi-geo-alt {
+        font-size: 14px;
+    }
+
+    .container-footer {
+        padding: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+        /* Ajusta o padding */
+    }
+
+    .lg {
+        width: 80px;
+        /* Reduz ainda mais a logo */
+    }
+
+    .navbar .active {
+        font-size: 14px;
+        /* Ajusta o tamanho dos links */
+        margin: 0 5px;
+        /* Reduz o espaçamento */
+    }
+
+    .h1-inicio {
+        font-size: 20px;
+        /* Reduz o tamanho do texto */
+        padding: 0 10px;
+        /* Adiciona espaçamento lateral */
+    }
+
+    .estrutura-premium {
+        font-size: 20px;
+        /* Reduz o tamanho da fonte */
+    }
+
+    .image-group img {
+        width: 80px;
+        /* Reduz o tamanho das imagens */
+    }
+
+    .frame iframe {
+        border-radius: 0;
+        /* Remove bordas arredondadas */
+    }
+
+    .btn-quero {
+        font-size: 18px;
+        /* Reduz o tamanho do botão */
+    }
+
+    .INOVE {
+        color: goldenrod;
+        font-size: 50px;
+    }
+
+    .sobre-h1 {
+        margin-right: 10px;
+    }
+
+    .h1-sobre {
+        font-size: 15px;
+    }
+
+    .desc-sobre {
+        font-size: 12px;
+        max-width: 230px;
+        /* Define uma largura máxima para a descrição, se necessário */
+        text-indent: 50px;
+    }
+
+    .tags,
+    .locacoes {
+        font-size: 15px;
+        padding-left: 1.5em;
+    }
+
+    .tag {
+        padding-right: 1em;
+        padding-left: 2em;
+    }
+
+    .env {
+        padding: 10px 155px;
+    }
+
+    .form-container {
+        padding: 10px;
+        /* Ajusta o padding do formulário */
     }
 }
